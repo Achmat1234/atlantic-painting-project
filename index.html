@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style type="text/css">
+    body{
+    font-family: 'Open Sans', sans-serif;
+  }
+  a{
+      color: #fff;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    width: 5%;
+  }
+  .carousel{
+      border-bottom: 5px solid #ed1b24;
+  }
+  .mb-1, .my-1{
+    background: #1d1852;  
+    margin: 0 !important;
+    }
+    .nav-link{
+      font-size: 16px;
+      display: block;
+      text-transform: uppercase;
+      margin: 0px 5px;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+      color: #fff;
+    }
+    .space{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .content-holder .img{
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        background-size: cover !important;
+    }
+    .content-holder .img:first-child{
+      background-position: center;
+    }
+    .content-holder .img:nth-child(0){
+        background: url("img/cover.jpg");
+    }
+    .desc{
+        padding: 20px 75px;
+        background: #0d043d;
+        height: 140px;
+    }
+    .counter{
+        height: fit-content;
+        background-image: url('img/couch.jpg');
+        background-position: center;
+    }
+    .shadow{
+      background: rgba(0, 0, 0, 0.6392156862745098);
+    }
+    .counter h2{
+        font-size: 60px;
+        margin-bottom: 0px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: bold;
+        text-align: center;
+    }
+    .counter span{
+        font-size: 18px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 400;
+        text-align: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .intro{
+        margin: 0px 180px 30px 180px;
+        text-align: center;
+    }
+    .intro h2{
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 15px;
+        color: #1d1752;
+        font-family: inherit;
+        text-align: center;
+    }
+    .sub{
+        display: inline-block;
+        font-size: 14px;
+        color: #666666;
+    }
+    .intro .sub{
+        font-size: 18px;
+        line-height: 34px;
+        color: #666666;
+        font-family: inherit;
+        font-weight: 400;
+        text-align: center;
+    }
+    .float-right{
+      float: right;
+    }
+    .desc h1{
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 600;
+        text-align: center;
+    }
+    .desc .sub{
+        font-size: 14px;
+        line-height: 26px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 400;
+        text-align: center;
+    }
+    footer{
+        height: 304px;
+        background-color: #1d1752;
+    }
+    footer p{
+        font-size: 18px;
+        line-height: 34px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 400;
+        text-align: center;
+    }
+    footer h2{
+        font-size: 46px;
+        line-height: 36px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 600;
+        text-align: center;
+    }
+    footer span{
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 600;
+        text-align: center;
+    }
+    .footer-bottom{
+        padding:20px;
+        height: 72px;
+        background-color: #0d033d;
+    }
+    .footer-bottom p{
+        font-size: 14px;
+        line-height: 34px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 400;
+        text-align: center;
+    }
+    .services h1{
+        font-size: 18px;
+        line-height: 30px;
+        color: #0d033d;
+        font-family: "Open Sans";
+        font-weight: 600;
+        text-align: center;
+    }
+    .icon{
+        margin-bottom: 30px;
+        width: 90px;
+    }
+    .intro-background{
+      background-image: url("img/background-intro.jpg");
+    }
+    .top-bar{
+      height: fit-content;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 15px;
+      background-color: #0d033d;
+    }
+    .fa{
+      margin: 0px 10px;
+    }
+    @media only screen and (max-width: 900px) {
+      .desc{
+        padding: 20px 10px !important;
+      }
+      .intro{
+        margin: 0px 10px 30px 10px;
+      }
+      .space{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .footer-bottom{
+        height: fit-content;
+      }
+      .float-right{
+        float: unset !important;
+      }
+   }
+
+   @media(min-width: 576px){
+    .col-sm-4,.col-sm-3,.col-sm-6 {
+      width: 100% !important;
+      flex: 100%;
+    }
+}
+
+   .carousel-item{
+     height: 800px;
+     padding: 200px 60px;
+     background: cover !important;
+     background-position: center !important;
+
+   }
+  .caption p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #fbfbff;
+  }
+  .contactus-link{
+    width: 197px;
+    border: 0px solid !important;
+    height: 49px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #ed1c24;
+  }
+  .caption h1{
+    font-size: 40px;
+    line-height: 42px;
+    color: #fbfbff;
+    font-weight: bold;
+  }
+  .caption span{
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fbfbff;
+    font-weight: bold;
+  }
+  a {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+    </style>
+  </head>
+<body>
+<div class="top-bar">
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <span>Residential And Commercial Painting Services</span>
+      </div>
+    <div class="col-12 col-sm-6">
+      <div class="float-right">
+        <i class="fa fa-phone"></i> <a href="tel:+27825522143">082 552 2143</a>   
+        <i class="fa fa-envelope"></i> <a href="mailto:info@atlanticpainting.co.za">info@atlanticpainting.co.za</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+             Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            About Us
+        </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+              Services
+          </a>
+          </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">
+            Gallery
+        </a>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+            Contact Us
+        </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <!--slider 1-->
+    <div class="carousel-item active" style ="background: url('img/slider.jpg')">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="caption">
+            <span>Your Commercial & Residential Painting Contractor</span>
+            <h1>Specialist in Residential and Commercial Painting Services</h1>
+            <p>We are experienced residential and commercial contractors, carrying out interior and exterio painting and decorating that would include thorough or light preparation, clean-ups, or high class finishes.</p>
+            <button class="contactus-link">Contact us </i></button>
+          </div>
+       </div>
+     </div>
+    </div>
+      <!--slider 2-->
+      <div class="carousel-item" style ="background: url('img/slider.jpg')">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="caption">
+              <span>Your Commercial & Residential Painting Contractor</span>
+              <h1>Specialist in Residential and Commercial Painting Services</h1>
+              <p>We are experienced residential and commercial contractors, carrying out interior and exterio painting and decorating that would include thorough or light preparation, clean-ups, or high class finishes.</p>
+              <button class="contactus-link">Contact us </i></button>
+            </div>
+         </div>
+       </div>
+      </div>
+      <!--slider 3-->
+      <div class="carousel-item" style ="background: url('img/slider.jpg')">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="caption">
+              <span>Your Commercial & Residential Painting Contractor</span>
+              <h1>Specialist in Residential and Commercial Painting Services</h1>
+              <p>We are experienced residential and commercial contractors, carrying out interior and exterio painting and decorating that would include thorough or light preparation, clean-ups, or high class finishes.</p>
+              <button class="contactus-link">Contact us</i></button>
+            </div>
+         </div>
+       </div>
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!--/.Carousel Wrapper-->
+  <!--content 1--->
+  <div class="intro-background">
+  <div class="container space">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="intro">
+                <h2>Welcome To Atlantic Painting</h2>
+                <span class="sub">We value the quality of our painting service and therefore perform our service  according to set standards.</span>
+            </div>
+        </div>
+      </div> 
+    <div class="row">
+      <div class="col-md-6">
+        <div class="content-holder">
+            <div class="img" style ="background-image: url('img/business.jpg');"></div>
+            <div class="desc center">
+                <h1>Commercial Painting Services</h1>
+                <span class="sub">As a painting contractor, we undertake commercial  painting services in the Western Cape ProvinceProvince.</span>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-holder">
+            <div class="img" style ="background-image: url('img/home.jpg');" ></div>
+            <div class="desc center">
+                <h1>Residential Painting Services</h1>
+                <span class="sub">We value the quality of our painting service and therefore perform our service  according to set standards.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--content 2--->
+    <div class="counter">
+      <div class="shadow space">
+    <div class="container space">
+        <div class="row">
+        <div class="col-12  col-sm-3 center">
+            <h2>1125</h2>
+            <span>Satisfied Clients</span>
+        </div>
+        <div class="col-12 col-sm-3 center">
+            <h2>632</h2>
+            <span>Residential PROJECTS</span>
+        </div>
+        <div class="col-12  col-sm-3 center">
+            <h2>210</h2>
+            <span>CREATIVE PROJECTS</span>
+        </div>
+        <div class="col-12 col-sm-3 center">
+            <h2>326</h2>
+            <span>Commercial PROJECTS</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!--section 3--->
+  <div class="container space">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="intro">
+                <h2>Our Quality And Assurance</h2>
+                <span class="sub">We pride ourselves in our services and with providing a quality painting services for your residential and commercial needs.</span>
+            </div>
+        </div>
+      </div> 
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row center">
+            <div class="col-12 services col-sm-4">
+              <img class="icon" src="img/medal.png">
+              <h1>Quality Craftmanship</h1>
+              <span class="sub">We value the quality of our painting service and therefore perform our service  according to set standards</span>
+            </div>
+            <div class="col-12 services col-sm-4">
+                <img class="icon" src="img/like.png">
+                <h1>Customer Satisfaction</h1>
+                <span class="sub">We value the quality of our painting service and therefore perform our service  according to set standards</span>
+            </div>
+            <div class="col-12  services col-sm-4">
+                <img class="icon" src="img/money.png">
+                <h1>Competitive Pricing</h1>
+                <span class="sub">We value the quality of our painting service and therefore perform our service  according to set standards</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<!---footer--->
+<footer>
+    <div class="container space">
+        <div class="row center">
+            <div class="col-12 col-sm-12">  
+                <p>Please contact us to discuss all your residential and commercial painting needs</p>
+                <h2>
+                    082 552 2143
+                </h2>
+                <span><a href="mailto:info@atlanticpainting.co.za">info@atlanticpainting.co.za</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom center">
+        <P>© Copyright 2019 atlanticpainting.co.za | website designed by virtualdesigns.co.za</P>
+    </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
